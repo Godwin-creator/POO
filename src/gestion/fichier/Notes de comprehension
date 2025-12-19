@@ -1,0 +1,43 @@
+
+1)
+| Flux         | Rôle                     |
+| ------------ | ------------------------ |
+| `System.in`  | Entrée (clavier)         |
+| `System.out` | Sortie normale (console) |
+| `System.err` | Sortie erreur            |
+
+
+
+2)
+[ Fichier (Abstrait) ]
+              ^
+              |
+    ---------------------
+    |                   |
+[ FichierSimple ]    [ Repertoire ]
+(Contient du texte)  (Contient une LISTE de Fichiers)
+
+
+3)
+--> Pourquoi est  possible Fichier(repertoire) dans repertoire  ? 
+        Parce que grâce au
+        polymorphisme, la classe Repertoire peut contenir d'autres Repertoire. C'est ce qui te permet de créer des dossiers dans des dossiers, à l'infini.
+
+
+4) 
+À quoi sert concrètement @Serial
+
+    @Serial sert à indiquer explicitement au compilateur que :
+
+    « Cette variable ou cette méthode est directement liée au mécanisme de sérialisation Java. »
+
+    
+Elle permet de :
+
+    détecter les erreurs de signature
+
+    éviter les fautes silencieuses
+
+    rendre le code auto-documenté
+
+elle est introduite en Java 14 pour plus de clarté, de sureté et de sécurité.
